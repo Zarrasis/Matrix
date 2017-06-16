@@ -12,8 +12,33 @@ int getMatrix()
 	int m = 0;
 	int n = 0;
 	scanf("%d, %d", n, m);
-	int matrixArray[n][m];
+	int matrixArray[n][m] = {0};
+	printf("Please enter your matrix");
+	int i = 0;
+	int rowCount = 0;
+	for(i = 0; i < n*m; i++)
+	{
+		if(i%n == 0)
+			rowCount++;
+		scanf("%d", matrixArray[i][rowCount]);
+		printMatrix;
+	}
 
+	return 0;
+}
+
+int printMatrix()
+{
+
+	int i = 0;
+	for(in = 0; i < n*m; i++)
+	{
+		if(i%n == 0)
+			rowCount++;
+		printf("%d", matrixArray[i][rowCount]);
+	}
+	return 0; 
+}
 
 int main()
 {
@@ -31,6 +56,13 @@ int main()
 		case 2:
 		{
 			printf("Not yet complete")
+			break;
+		}
+
+		default:
+		{
+			printf("Not yet complete")
+			break;
 		}
 	}
 
