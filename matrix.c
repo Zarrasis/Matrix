@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int determinant(){
+int determinant(int matrixArray[10][10]){
+	//
     return 0;
 }
 
@@ -72,7 +73,6 @@ int main()
 		{
 
 			getMatrix();
-			//determinant();
 			break;
 		}
 		case 2:
