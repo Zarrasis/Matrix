@@ -107,11 +107,28 @@ void getMatrix(){
 	return;
 }
 
+void getRotMatrix(){
+
+	int i = 0;
+	int matrix[3]
+	printf("Your matrix should be a 1x3 matrix, please enter it now. \n");
+	for(i = 0; i < 3; i++)
+		scanf("%d", &matrix[i]);
+	rotate(matrix);
+	printMatrix(3, matrix);
+}
+
+void rotate(int** matrix){
+	
+	// inc
+	return;
+}
+
 
 int main(){
 
 	int choice = 0;
-	printf("What would you like to do?\n1.Determinant\n\n");
+	printf("What would you like to do?\n1.Determinant\n2.Rotation About Z for pi/4\n");
 	scanf("%d", &choice);
 
 	switch(choice)
